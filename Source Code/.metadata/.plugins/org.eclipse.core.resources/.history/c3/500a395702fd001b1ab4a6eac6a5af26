@@ -1,0 +1,12 @@
+package com.locked;
+
+import java.util.List;
+
+public class FileManager 
+{
+	public static List<String> getAllFiles(String folderpath)
+	{
+		
+	}
+
+}

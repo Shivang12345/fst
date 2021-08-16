@@ -1,0 +1,16 @@
+package com.locked;
+
+import java.io.File;
+import java.util.List;
+
+public class FileManager 
+{
+	public static List<String> getAllFiles(String folderpath)
+	{
+		File fl=new File(folderpath);
+		File[] listofFiles = fl.listFiles();
+		List<String> filesNames=new ArrayList<String>();
+		
+	}
+
+}

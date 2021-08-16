@@ -1,0 +1,28 @@
+package com.locked;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class VirtualLocked 
+{
+	static final String folderpath="D:\\My phase1 Project\\Lockedfiles";
+
+	public static void main(String[] args) 
+	{
+		//code for searching the file
+	     String fileName;
+	     Scanner obj=new Scanner(System.in);
+	     System.out.println("Enter file name to be Search:");
+	     
+	     fileName=obj.nextLine();
+	     
+	     boolean isFound = FileManager.searchFile(folderpath, fileName);
+	     
+	     if(isFound)
+	    	 System.out.println("File is present in the Folder");
+	     else
+	     System.out.println("Either file not there or some access issue");
+	}
+
+}

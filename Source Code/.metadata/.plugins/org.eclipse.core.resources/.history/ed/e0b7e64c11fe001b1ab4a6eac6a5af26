@@ -1,0 +1,23 @@
+package com.locked;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class VirtualLocked 
+{
+	static final String folderpath="D:\\My phase1 Project\\Lockedfiles";
+
+	public static void main(String[] args) 
+	{
+		
+	}
+	public  static void getAllFiles()
+	{
+List<String> fileNames=FileManager.getAllFiles(folderpath);
+		
+	    for(String f:fileNames)	
+  	System.out.println(f);
+	}
+
+}
